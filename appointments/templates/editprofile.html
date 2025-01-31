@@ -1,0 +1,51 @@
+{% extends 'base.html'%}
+
+{% load static %}
+ {% load widget_tweaks %} 
+
+{%block title%}
+home
+{%endblock%}
+
+
+{% block style %}
+<link rel="stylesheet" href="{% static 'css/addprofile.css' %}">
+{% endblock %}
+
+
+{% block content %}
+
+
+
+
+
+
+
+
+        
+    <form method="POST" enctype="multipart/form-data">
+
+            {% csrf_token %}
+        <div class="cardx" style="width: 18rem;">
+        
+        
+            <div class="card-body">
+
+                <h1>Edit Profile</h1> 
+               {{form}}
+        
+        
+             <input class="a" type="submit">
+        
+            
+            </div>
+        </div>
+     </form>
+            
+
+         
+
+
+
+
+{% endblock%}

@@ -1,0 +1,243 @@
+body{
+ 
+    background-image: url(https://img.freepik.com/premium-photo/medicine-age-support-healthcare-people-concept-close-up-doctor-nurse-holding-senior-man-hand-hospital_380164-166867.jpg);
+  background-size: 1350px 1400px;
+  background-position: right;
+}
+
+
+.fm{
+    width: 40%;
+    margin: auto;
+  backdrop-filter: blur(50px);
+   margin-top: 100px;
+  
+   
+   
+
+}
+.fm input{
+    margin-top: 20px;
+    height: 80px;
+    border-radius: 10px;
+
+   
+}
+.fm button{
+    margin-top: 30px;
+    width: 200px;
+    height: 60px;
+    border-radius: 10px;
+    margin-left: 160px;
+    background-color: rgb(0, 71, 71);
+    margin-bottom: 20px;
+  
+}
+
+.alert-danger{
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    margin-top: 30px;
+    border-radius: 10px;
+
+
+
+}
+
+
+h1{
+    text-align: center;
+    font-weight: bolder;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(4, 75, 75);
+    /* margin-top: 50px ; */
+    font-size: 50px;
+   
+}
+
+
+p{
+    text-align: center;
+    font-weight: bolder;
+    
+}
+
+
+
+@media  all and (max-width: 1220px) {
+
+    body{
+      background-size:1400px 2200px;
+      
+      margin-top: 0px;
+    }
+
+    .fm{
+        width: 60%;
+        margin: auto;
+        margin-top: 100px;
+        
+    
+    }
+    .fm input{
+       
+        height: 80px;
+        font-size: 25px;
+        
+        
+    }
+    .fm button{
+      
+        width:40%;
+        height: 50px;
+        margin-left: 200px;  
+        font-size: 20px;
+    }
+    .alert-danger{
+        width: 60%;
+        height: 70px;
+        text-align: center;
+        margin-top: 150px;
+    }
+    nav a{
+        font-size: 20px;
+        
+      }
+
+      p{
+        font-size: 25px;
+      }
+  }
+  @media  all and (max-width: 900px) {
+    body{
+        background-size:1400px 1900px;
+        
+        margin-top: 0px;
+      
+        
+      }
+  
+      .fm{
+          width: 60%;
+          margin: auto;
+          /* height: 50px; */
+          margin-top: 200px;
+      
+      }
+      .fm input{
+         
+          height: 80px;
+          
+      }
+      .fm button{
+        
+          width: 50%;
+          height: 50px;
+          margin-left: 130px;  
+      }
+      .alert-danger{
+          width: 60%;
+          height: 70px;
+          text-align: center;
+          margin-top: 100px;
+      }
+      nav a{
+        font-size: 20px;
+      }
+      p{
+        font-size: 20px;
+    }
+      
+   
+  }
+  @media  all and (max-width: 800px) {
+  
+    body{
+        background-size:1400px 1600px ;
+        
+        margin-top: 0px;
+      }
+  
+      .fm{
+          width: 70%;
+          margin: auto;
+          /* margin-top: 200px; */
+      
+      }
+      .fm input{
+         
+          height: 60px;
+          
+      }
+      .fm button{
+        
+          width: 40%;
+          height: 50px;
+          margin-left: 150px;  
+      }
+      .alert-danger{
+          width: 70%;
+          text-align: center;
+          height: 50px;
+          margin-top: 80px;
+
+      }
+      nav a{
+        font-size: 20px;
+      }
+      h1{
+       
+        
+        margin-top: 50px;
+        font-size: 50px;
+       
+    }
+    p{
+        font-size: 20px;
+    }
+      
+  }
+  @media  all and (max-width: 660px) {
+  
+    body{
+        background-size:1400px 1700px ;
+        background-position: left;
+        margin-top: 0px;
+      }
+  
+      .fm{
+          width: 70%;
+          margin: auto;
+          /* backdrop-filter: blur(px); */
+      
+      }
+      .fm input{
+         
+          height: 60px;
+          font-size: 15px;
+      }
+      .fm button{
+        
+          width: 60%;
+          height: 50px;
+          margin-left: 50px !important;  
+          font-size: 20px;
+      }
+      .alert-danger{
+          width: 70%;
+          text-align: center;
+          height: 50px;
+          margin-top: 80px;
+
+      }
+     
+
+      nav a{
+        font-size: 20px;
+      }
+     h1{
+        font-size: 30px;
+     } 
+  }

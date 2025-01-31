@@ -1,0 +1,45 @@
+{% extends 'base.html'%}
+
+{% load static %}
+ {% load widget_tweaks %} 
+
+{%block title%}
+home
+{%endblock%}
+
+
+{% block style %}
+<link rel="stylesheet" href="{% static 'css/adddoctors.css' %}">
+{% endblock %}
+
+
+{% block content %}
+
+
+
+<form method="POST" enctype="multipart/form-data">
+
+    {% csrf_token %}
+
+    <div class="cardx" >
+        
+        
+        <div class="card-body">
+
+            <h1>Edit doctors</h1> 
+
+            {% render_field  form.name placeholder="Enter Name" class="in" id='xyz' %}  
+
+            {% render_field  form.details placeholder="Enter Details" class="is"  %} 
+            {% render_field  form.image class="in" %}  
+            {% render_field  form.ctry class="in" %} 
+            
+        
+
+
+             <input class="s" type="submit" >
+        </div>
+    </div>
+</form>
+
+{% endblock%}

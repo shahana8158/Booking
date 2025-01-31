@@ -1,0 +1,85 @@
+
+{% extends 'base.html'%}
+{% load static %}
+
+
+
+{%block title%}
+
+
+
+{%endblock%}
+
+{% block style %}
+<link rel="stylesheet" href="{% static 'css/profile.css' %}">
+{% endblock %}
+
+
+
+{% block content %}
+
+<div class="pro">
+
+                
+
+                <img style="border-radius: 100px;" src="{{user.profile.image.url}}" width="200px" alt="">
+                <h1>{{user.profile.user_name}}</h1>
+
+                <h2>{{user.profile.first_name}}{{user.last_name}}</h2>
+                <h3>{{user.profile.phone}}</h3>
+                <h4>{{user.profile.Email}}</h4>
+
+                <a style="font-weight: bolder;" href="/editprofile/{{user.id}}" class="btn btn-primery">Edit profile</a>
+
+</div>
+
+<hr style="border-top:3px solid rgb(1, 39, 54);">
+
+<h5>YOUR APPOINTMENTS</h5>
+
+<div class="main">
+
+  
+  {% for i in book %}
+  
+    <div class="cardx" style="width: 18rem;">
+        
+        <div class="card-body">
+                <h1>Booked Successfully !</h1>
+                <hr>
+                    <h5 class="card-title">{{i.Doctorname}}</h5>
+                    <p class="card-text"> patient name : {{i.Patientname}}</p>
+                    <p class="card-text">phone : {{i.Phone}}</p>
+                    <p class="card-text">Age : {{i.Age}}</p>
+                    <p class="card-text"> Date : {{i.Date}}</p>
+                    <!-- <p class="card-text">{{i.Email}}</p>
+                    <p class="card-text">{{i.Place}}</p>
+                    
+                    <p class="card-text">{{i.Time}}</p> -->
+  
+                    
+  
+                    {% if i.us == user %} 
+
+                    <a href="/editbooking/{{i.id}}" class="btn btn-info">Edit</a>
+                    <a href="/cancelbooking/{{i.id}}" class="btn btn-danger">Cancel</a>
+
+                    {% endif %}
+                    
+  
+        </div>
+    </div>
+  
+    {% endfor %}
+  
+
+  
+{% endblock%}
+  
+
+
+
+
+
+
+

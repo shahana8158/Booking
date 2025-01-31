@@ -1,0 +1,148 @@
+.card{
+
+    width: 300px;
+    text-align: center;
+    margin-top: 40px;
+    height: 100px;
+    background-color: rgb(6, 47, 63);
+    border-radius: 20px;
+    
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 120px;
+}
+body{
+
+    background-image: url(https://media.istockphoto.com/id/1254842349/vector/dna-digital-sequence-code-structure-with-glow-science-concept-and-nano-technology-background.jpg?s=612x612&w=0&k=20&c=LUf86-2vIQiJAtJtG8ME37WZURlvxW-GhiUYLLifDJo=);
+    background-size: cover;
+
+
+}
+.container a{
+
+    font-weight: bolder;
+    margin-top:40px;
+    color:rgb(254, 255, 255);
+}
+p{
+    font-size: 50px;
+     font-weight:bolder;
+     text-align:center;
+     color:rgb(0, 51, 80)
+}
+
+@media  all and (max-width:1550px) {
+
+    p{
+        font-size: 60px;
+        margin-top: 50px;
+        
+    }
+    body{
+        background-size: cover;
+    }
+
+    .card{
+        margin-top: 80px;
+        
+        
+    }
+    
+     .card a{
+        font-size: 20px;
+     }
+     nav a{
+        font-size: 20px;
+      }
+      }
+@media  all and (max-width:1030px) {
+
+    p{
+        font-size: 60px;
+        margin-top: 50px;
+        
+    }
+    body{
+        background-size: cover;
+    }
+
+    .card{
+        margin-top: 80px;
+        width: 400px;
+        
+    }
+    .container{
+        margin-bottom: 250px;
+    }
+     .card a{
+        font-size: 20px;
+     }
+     nav a{
+        font-size: 20px;
+      }
+      }
+
+@media  all and (max-width:850px) {
+
+    p{
+        font-size: 50px;
+        margin-top: 50px;
+        
+    }
+    body{
+        background-size: cover;
+    }
+
+    .card{
+        margin-top: 80px;
+        
+        
+    }
+    .container{
+        margin-bottom: 70px;
+    }
+    nav a{
+        font-size: 20px;
+      }
+     
+      }
+@media  all and (max-width: 780px) {
+
+    body{
+        background-size: cover;
+    }
+
+    .card{
+        margin-top: 60px;
+    } 
+    p{
+        margin-top: 50px;
+    } 
+    nav a{
+        font-size: 20px;
+      }
+      .container a {
+        margin-top: 30px;
+     }
+      }
+  
+
+
+
+
+@media  all and (max-width: 660px) {
+
+p{
+    font-size: 30px;
+}
+nav a{
+    font-size: 20px;
+  }
+ .container a {
+    margin-top: 30px;
+ }
+  
+  }

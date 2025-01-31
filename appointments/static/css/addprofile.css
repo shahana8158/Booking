@@ -1,0 +1,130 @@
+body{
+    background-image:url(https://media.istockphoto.com/id/1254842513/vector/dna-digital-sequence-code-structure-with-glow-science-concept-and-nano-technology-background.jpg?s=612x612&w=0&k=20&c=3bnYURL84y-u6PQn21kt3EN2giWgZVuYvGsh59hdGU0=);
+    background-size: cover;
+
+}
+
+form{
+    
+    margin-top: 50px;
+    font-size: 20px;
+    margin-bottom: 50px;
+    text-align: center;
+   
+}
+.a{
+    background-color: rgb(0, 43, 83) !important;
+    color: aliceblue;
+    margin-left: 40px;
+    width: 200px;
+}
+input{
+    margin-top: 40px;
+    width: 300px;
+    font-size: 20px;
+}
+ /* p{
+    font-size: 30px !important;
+} */
+
+h1{
+    text-align: center;
+    font-style: unset;
+    font-weight: bolder;
+    color: rgb(1, 34, 65);
+    margin-top: 10px;
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.cardx{
+    width: 550px !important;
+    background-color: aliceblue;
+    margin-left: 370px ;
+    margin-top: 30px ;
+    font-size: 20px;
+   
+}
+
+
+  
+@media  all and (max-width: 660px) {
+  
+    body{
+        background-size:1400px 2500px ;
+        
+        
+    }
+  
+    .cardx{
+        width: 600px !important;
+   
+        margin-left: 10px;
+    }
+
+    nav a{
+        font-size: 30px;
+    }
+    
+     
+  }
+@media  all and (max-width: 800px) {
+  
+    body{
+        background-size:1400px 1400px ;
+        
+        
+    }
+  
+    .cardx{
+        margin-left: 100px ;
+       font-size: 20px;
+    }
+     
+    nav a{
+        font-size: 20px;
+    }
+  
+  }
+@media  all and (max-width: 900px) {
+  
+    body{
+        background-size:1400px 1400px ;
+        
+       
+    }
+  
+    .cardx{
+        margin-left: 10px !important ;
+        width: 370px !important;
+        font-size: 20px !important;
+    }
+    
+   input{
+    width: 220px !important;
+   }
+     
+    nav a{
+        font-size: 20px;
+    }
+   
+}
+@media  all and (max-width: 1100px) {
+  
+    body{
+        background-size:1400px 1400px ;
+        
+       
+    }
+  
+    .cardx{
+        margin-left: 220px;
+       font-size: 20px;
+    }
+  
+     
+    nav a{
+        font-size: 20px;
+    }
+   
+}

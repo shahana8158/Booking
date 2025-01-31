@@ -1,0 +1,43 @@
+
+{% extends 'base.html'%}
+
+{% load static %}
+
+{%block title%}
+
+{%endblock%}
+
+
+
+{%block style%}
+<link rel="stylesheet" href="{% static 'css/category.css' %}">
+
+{%endblock%}
+
+
+
+
+{%block content%}
+
+
+
+
+
+<div class="main">
+
+    {% for i in doc %}
+
+    <div  class="card" style="width: 600px;">
+        <img style="height: 400px;" class="card-img-top" src="{{i.image.url}}" alt="Card image cap">
+            <div style="text-align: center;" class="card-body">
+                    <h5 style="font-weight: bolder;" class="card-title">{{i.title}}</h5>
+                    <p class="card-text">{{i.description}}</p>
+                  
+            </div>
+    </div>
+
+    {% endfor %}
+</div>
+  
+
+{% endblock%}

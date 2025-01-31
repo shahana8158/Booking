@@ -1,0 +1,43 @@
+
+{% extends 'base.html'%}
+
+{% load static %}
+
+{%block title%}
+
+{%endblock%}
+
+
+
+{%block style%}
+<link rel="stylesheet" href="{% static 'css/doctors.css' %}">
+
+{%endblock%}
+
+
+
+
+{%block content%}
+
+<h1>Specialists</h1>
+
+<div class="main">
+
+    {% for i in doc %}
+
+    <div   class="card" style="width: 18rem;">
+        <img style="height: 300px;"  class="card-img-top" src="{{i.image.url}}" alt="Card image cap">
+            <div style="text-align: center;" class="card-body">
+                    <h5 style="font-weight: bolder;" class="card-title">{{i.name}}</h5>
+                    <p class="card-text">{{i.details}}</p>
+                    <a style="border-radius: 10px;background-color:rgb(2, 55, 71);color:aliceblue;" href="/booking" class="btn btn-primary">Book</a>
+                  
+            </div>
+    </div>
+
+    {% endfor %}
+</div>
+
+  
+
+{% endblock%}

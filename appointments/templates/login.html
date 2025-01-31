@@ -1,0 +1,47 @@
+
+{% extends 'base.html'%}
+
+{%block title%}
+
+
+{%endblock%}
+
+{% load static %}
+
+{% block style %}
+<link rel="stylesheet" href="{% static 'css/register.css' %}">
+{% endblock %}
+
+{% block content %}
+
+
+
+{% for i in messages%}
+
+  <div class="alert alert-danger" role="alert">
+    {{i}}
+  </div>
+
+{% endfor%}
+
+<form class="fm" method="POST">
+
+    {% csrf_token%}
+
+    <h1 >Login</h1>
+
+<hr style="border-top: 5px solid rgb(0, 90, 86); width:100px ; ">
+
+    <input type="text" class="form-control"  name= "username" placeholder="user name">
+    
+    <input type="password" class="form-control" name="password1" placeholder="password">
+
+
+
+    <button type="submit" class="btn btn-primary">Log in</button>
+    <!-- <button class="b" style="background-color:  rgb(157, 202, 228); " ><a style="color: rgb(15, 15, 15);" href="/register">Create new account</a></button> -->
+    <p >Create new account? <a  href="/register">Register</a></p>
+<br>
+</form>
+
+{% endblock%}

@@ -1,0 +1,58 @@
+
+{% extends 'base.html'%}
+
+{% load static %}
+
+{%block title%}
+
+{%endblock%}
+
+
+
+{%block style%}
+<link rel="stylesheet" href="{% static 'css/home.css' %}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+{%endblock%}
+
+
+
+
+{%block content%}
+
+<!-- <img class="x" src="{%static 'images/p1.png'%}" alt=""> -->
+<h4>Online Doctor <br>Appointment</h4>
+<h1>HI THERE !</h1>
+<h2>Always Caring About Your Health.We Are Here To Help You. <br><br>
+
+
+  <button class="b"><a href="/category">Book Appointment</a></button> </h2>
+
+
+<!-- <img class="y"  src="{%static 'images/p2.png'%}" alt=""> -->
+
+
+
+<footer>
+  <ul>
+   <p>follow us</p>
+   <i  class="fa-brands fa-twitter"></i>
+   <i class="fa-brands fa-instagram"></i>
+   <i class="fa-brands fa-facebook"></i>
+   <i class="fa-brands fa-google-plus"></i>
+   <i class="fa-brands fa-youtube"></i><br>
+    <li><a href="/services">Services</a></li>
+
+    <li><a href="/doctors">Doctors</a></li>
+
+    <li><a href="/booking">Booking</a></li>
+
+    <li><a href="/profile">Profile</a></li>
+
+  </ul>
+  <hr>
+ 
+  <p> copyright © 2024  QUROCARE , Inc. All rights reserved.</p>
+</footer>
+
+{%endblock%}

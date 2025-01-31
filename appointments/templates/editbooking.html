@@ -1,0 +1,76 @@
+{% extends 'base.html'%}
+
+{% load static %}
+ {% load widget_tweaks %} 
+
+{%block title%}
+home
+{%endblock%}
+
+
+{% block style %}
+<link rel="stylesheet" href="{% static 'css/editbooking.css' %}">
+{% endblock %}
+
+
+{% block content %}
+
+
+
+
+
+
+
+
+        
+    <form method="POST" enctype="multipart/form-data">
+
+            {% csrf_token %}
+        <div class="cardx" >
+             
+             
+            <div class="card-body">
+                <h1>Edit booking</h1> 
+             
+
+                {{form}}
+        
+             <!--  1 -->
+           
+             
+               
+                
+                {% if form.Date.errors %}
+                    <div class="text-danger">
+                        {% for error in form.Date.errors %}
+                            {{ error }}
+                        {% endfor %}
+                    </div>
+                {% endif %}
+           
+        
+            
+                
+               
+                {% if form.Time.errors %}
+                    <div class="text-danger">
+                        {% for error in form.Time.errors %}
+                            {{ error }}
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            
+
+
+             <input class="a" type="submit">    
+            </div>
+        </div>
+     </form>
+            
+
+         
+
+
+
+
+{% endblock%}

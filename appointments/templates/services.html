@@ -1,0 +1,98 @@
+
+{% extends 'base.html'%}
+
+{% load static %}
+
+{%block title%}
+
+{%endblock%}
+
+
+
+{%block style%}
+<link rel="stylesheet" href="{% static 'css/services.css' %}">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+{%endblock%}
+
+
+
+
+{%block content%}
+
+
+    <!-- <h1>Your Health Is Our Top Priority</h1>
+    <img  class="xyz" src="{%static 'images/d1.png'%}" alt="" > -->
+ <!-- <img class="im" src="https://media.licdn.com/dms/image/v2/D5612AQGkwy4_4iDtqg/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1674239050529?e=2147483647&v=beta&t=mGTCSpi5M4IOtRf6v5-tq1aojHdBLmz8vndiP67ReMQ" alt=""> -->
+
+
+
+
+  
+
+    <h2>Our Services</h2>
+    <h3>The Best Quality Services For Your <br> Family</h3>
+
+    <hr>
+
+    <div class="main">
+
+        {% for i in xyz %}
+    
+        <div  class="card" style="width: 600px;">
+            <img style="height: 400px;" class="card-img-top" src="{{i.image.url}}" alt="Card image cap">
+                <div style="text-align: center;" class="card-body">
+                        <h5 style="font-weight: bolder;" class="card-title">{{i.title}}</h5>
+                        <p class="card-text">{{i.description}}</p>
+                      
+                </div>
+        </div>
+    
+        {% endfor %}
+    </div>
+<hr>
+<h2 style="color: rgb(1, 44, 58);">  We're an employee benefit at <br> 7000+ companies</h2>
+<hr>
+
+
+<div class="staff">
+    {% for i in abc %}
+        <div  class="x" style="width: 200px;  background-color: rgb(248, 229, 244); border-radius: 20px;">
+            
+            <h5 style="font-weight: bolder; margin-top:40px" class="card-title">{{i.title}}</h5> 
+            <p style="font-weight: bolder;" class="card-text">{{i.description}}</p>    
+        
+    
+        </div>
+    {% endfor %}
+</div>
+
+
+<!-- <img id="abc" src="{%static 'images/im.jpg'%}"  alt="" > -->
+<!-- <img src="https://storypick.com/wp-content/uploads/2016/05/dqcover-800x500.jpg" style="width: 1338px;" alt=""> -->
+<footer>
+    <ul>
+     <p>follow us</p>
+     <i  class="fa-brands fa-twitter"></i>
+     <i class="fa-brands fa-instagram"></i>
+     <i class="fa-brands fa-facebook"></i>
+     <i class="fa-brands fa-google-plus"></i>
+     <i class="fa-brands fa-youtube"></i><br>
+
+
+     <li><a href="/services">Services</a></li>
+
+     <li><a href="/doctors">Doctors</a></li>
+ 
+     <li><a href="/booking">Booking</a></li>
+ 
+     <li><a href="/profile">Profile</a></li>
+  
+     </ul>
+     <hr>
+   
+      <p> copyright © 2024  QUROCARE , Inc. All rights reserved.</p>
+    </footer>
+  
+
+{% endblock%}

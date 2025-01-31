@@ -1,0 +1,40 @@
+
+{% extends 'base.html'%}
+
+{% load static %}
+
+{%block title%}
+
+{%endblock%}
+
+
+
+{%block style%}
+<link rel="stylesheet" href="{% static 'css/category.css' %}">
+
+{%endblock%}
+
+
+
+
+{%block content%}
+
+<p>Choose a Specialist </p>
+
+<div class="container">
+
+    {% for i in cat %}
+        <div  class="card">
+            
+         <a href="/viewcategory/{{i.id}}"  class="card-title">{{i.title}}</a> 
+                
+         
+    
+        </div>
+    {% endfor %}
+
+</div>
+
+  
+
+{% endblock%}

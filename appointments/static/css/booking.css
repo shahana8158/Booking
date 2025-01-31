@@ -1,0 +1,204 @@
+body{
+    background-image: url(https://cdn.wallpapersafari.com/65/90/cXZVTQ.jpg);
+background-size: cover;
+
+}
+
+.fm input{
+    margin-top: 20px;
+    height: 80px;
+    width: 700px;
+    
+    border-radius: 10px;
+    
+    
+   
+}
+.fm{
+    width: 40%;
+    margin: auto;
+   
+
+}
+.fm button{
+    margin-top: 30px;
+    width: 250px;
+    height: 50px;
+    margin-left: 220px;
+    border-radius: 10px;
+   margin-bottom: 20px;
+}
+.alert-danger{
+    width: 130%;
+    margin: auto;
+    text-align: center;
+    margin-top: 50px;
+    border-radius: 10px;
+    /* height: 80px; */
+    font-size: 30px;
+    font-weight: bolder;
+}
+nav a{
+    font-size: 20px;
+  }
+.form-control{
+    margin-top: 20px;
+    height: 80px;
+    width: 700px;
+    
+    border-radius: 10px;
+}
+@media  all and (max-width: 1220px) {
+
+        body{
+          background-size:cover;
+          background-position: center;
+          
+        }
+        .fm input{
+            margin-top: 20px;
+            height: 80px;
+            width: 800px;
+            
+        }
+        .form-control{
+            margin-top: 20px;
+            height: 80px;
+            width: 800px;
+        }
+        .fm{
+            margin-left: 110px;
+            margin-top: 50px;
+        }
+        .fm button{
+            width: 250px;
+            height: 50px;
+            margin-left: 250px;
+            margin-bottom: 200px;
+        }
+    
+        h3{
+            font-size: 40px;
+           margin-left: 10px !important;
+           margin-top: 80px !important;
+        }
+        h4{
+            font-size: 40px;
+           margin-left: 10px !important;
+           
+        }
+        h1{
+            font-size: 50px;
+            margin-left: 10px !important;
+             } 
+             nav a{
+                font-size: 20px;
+              }
+              .alert-danger{
+                width: 800px;
+                /* height: 80px; */
+                font-size: 30px;
+                font-weight: bolder;
+            }
+            }
+@media  all and (max-width: 850px) {
+  
+    body{
+        background-size:cover ;
+        background-position: bottom;
+        margin-top: 0px;
+      }
+      .fm input{
+        margin-top: 20px;
+        height: 60px;
+        width: 650px;
+        
+    }
+    .form-control{
+        margin-top: 20px;
+        height: 60px;
+        width: 650px;
+    }
+    .fm{
+        margin-left: 80px;
+        margin-top: 50px;
+    }
+    .fm button{
+        width: 200px;
+        height: 50px;
+        margin-left: 220px;
+        margin-bottom: 200px;
+    }
+
+    h3{
+        font-size: 30px;
+       margin-left: 10px !important;
+    }
+    h4{
+        font-size: 30px;
+       margin-left: 30px !important;
+    }
+    h1{
+        font-size: 40px;
+        margin-left: 10px !important;
+     } 
+     nav a{
+        font-size: 30px;
+      }
+      .alert-danger{
+        width: 650px;
+        /* height: 60px; */
+        font-size: 20px;
+        font-weight: bolder;
+    }
+      
+  }
+  @media  all and (max-width: 660px) {
+  
+    body{
+        background-size:cover;
+        background-position: center;
+        margin-top: 0px;
+    }
+    .fm input{
+        margin-top: 20px;
+        height: 60px;
+        width: 270px;
+        
+    }
+    .form-control{
+        margin-top: 20px;
+        height: 60px;
+        width: 270px;
+    }
+    .fm{
+        margin-left: 70px;
+    }
+    .fm button{
+        width: 200px;
+        height: 50px;
+        margin-left: 30px;
+    }
+
+    h3{
+        font-size: 20px;
+       margin-left: 10px !important;
+    }
+    h4{
+        font-size: 18px;
+       margin-left: 10px !important;
+    }
+    h1{
+        font-size: 30px;
+        margin-left: 10px !important;
+     } 
+     nav a{
+        font-size: 20px;
+      }
+      .alert-danger{
+        width: 270px !important;
+        /* height: 90px; */
+        font-size: 20px;
+        font-weight: bolder;
+    }
+  }

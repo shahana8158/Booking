@@ -1,0 +1,150 @@
+
+{% extends 'base.html'%}
+
+{% load static %}
+{% load widget_tweaks %} 
+{%block title%}
+
+{%endblock%}
+
+
+
+{%block style%}
+<link rel="stylesheet" href="{% static 'css/booking.css' %}">
+
+{%endblock%}
+
+
+
+
+{%block content%}
+
+<h3 style="font-weight: bolder; color:rgb(8, 75, 75);text-align:center;margin-left:150px;margin-top:50px;">Get In Touch With Us</h3>
+
+<h1 style="font-weight: bolder; color:rgb(1, 58, 58);text-align:center;margin-left:150px;" > Meet With Our Experts</h1>
+
+<!-- <div class="cardx" style="background-color: rgb(159, 191, 199);margin-top:20px;width: 550px;margin-left:480px;">
+        
+        
+  <div class="card-body"> -->
+    
+    <h4 style="font-weight: bolder; color:rgb(97, 7, 15);text-align:center;margin-left:200px;margin-top:20px;margin-bottom:50px;" > Doctor's Appointment Availability:Monday to Saturday 9:00am to 5:00pm</h4>
+
+  <!-- </div>
+</div> -->
+
+<div class="fm">
+
+
+                
+
+                   
+    
+                {% for i in messages%}
+
+                    <div class="alert alert-danger" role="alert">
+                      {{i}}
+                    </div>
+                  
+                {% endfor%}
+    
+               
+
+
+
+
+
+        <form  action="/booking/ " method="post" >
+
+            
+            {% csrf_token%}
+         
+
+            <!-- <input type="text" class="form-control" name="Doctorname" placeholder="Doctor name"> -->
+            <select name="Doctorname" id="Doctorname" class="form-control" required>
+              <option value="">Select Doctor</option>
+             
+              <option value="Dr . Anna Joseph">Dr . Anna Joseph</option>
+              <option value="Dr . Mahadhev">Dr . Mahadhev</option>
+              <option value="Dr . Supritha">Dr . Supritha</option>
+              <option value="Dr . Mruthula">Dr . Mruthula</option>
+              <option value="Dr . Rajesh">Dr . Rajesh</option>
+              <option value="Dr . Shihab">Dr . Shihab</option>
+              <option value="Dr . Jamsheer">Dr . Jamsheer</option>
+              <option value="Dr . Kumar">Dr . Kumar</option>
+              <option value="Dr . Meenakshi">Dr . Meenakshi</option>
+              <option value="Dr . Kavi">Dr . Kavi</option>
+              <option value="Dr . Baburaj">Dr . Baburaj</option>
+              <option value="Dr . Lakshmi">Dr . Lakshmi</option>
+              <option value="Dr . Maya">Dr . Maya</option>
+              <option value="Dr . Favas">Dr . Favas</option>
+              <option value="Dr . Rishad">Dr . Rishad</option>
+              <option value="Dr . Biju Lal">Dr . Biju Lal</option>
+              <option value="DDr . kishor kumar">Dr . kishor kumar</option>
+              <option value="Dr . Jose Antony">Dr . Jose Antony</option>
+              <option value="Dr . Sunaina">Dr . Sunaina</option>
+              <option value="Dr . Subash">Dr . Subash</option>
+              <option value="Dr . Kiran">Dr . Kiran</option>
+              <option value="Dr . Ramadas">Dr . Ramadas</option>
+              <option value="Dr . Kavitha">Dr . Kavitha</option>
+              <option value="Dr . Ravi kumar">Dr . Ravi kumar</option>
+              <option value="Dr . Anupama">Dr . Anupama</option>
+              <option value="Dr . Riya subash">Dr . Riya subash</option>
+              <option value="Dr . Jayapal Jose">Dr . Jayapal Jose</option>
+              <option value="Dr . Gogul">Dr . Gogul</option>
+              <option value="Dr . veena">Dr . veena</option>
+              <option value="Dr . Rahul Sharma">Dr . Rahul Sharma</option>
+            </select>
+            
+            <input type="text" class="form-control"  name= "patientname" placeholder="Patient name" required>
+            <input type="number" class="form-control" name= "Age" placeholder="Age" required>
+
+            <!-- <label for="gender"> Gender: </label> -->
+            <select name="gender" id="gender" class="form-control" required>
+            <option value="">Select Gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+            </select>
+            <!-- <input  type="gender" class="form-control" name= "gender" placeholder="Gender"> -->
+            
+            <input type="phone number" class="form-control" name= "number" placeholder="Contact Number" required>
+            <input type="email" class="form-control" name= "email" placeholder="Email" required>
+            <input type="text" class="form-control" name= "place" placeholder="place" required>
+            <input type="date" class="form-control" name="date" placeholder="Date" required oninput="validateDate(this)" >
+            
+            <script>
+              function validateDate(input) {
+                  const selectedDate = new Date(input.value);
+                  if (selectedDate.getDay() === 0) { 
+                      alert("Appointments cannot be booked on Sundays.");
+                      input.value = ""; 
+                  }
+              }
+            </script>
+
+            <input type="time" class="form-control" name="time" placeholder="HH:MM" required >
+            
+          
+            
+            <select class="form-control" name="time_period" required>
+              <option value="">Select AM/PM</option>
+              <option value="am">AM</option>
+              <option value="pm">PM</option>
+              
+              </select>
+             
+             
+      
+
+            <button type="submit" style="background-color: rgb(1, 55, 87);color:aliceblue">BOOK NOW</button>
+
+
+        </form>  
+            
+</form>    
+
+</div> 
+  
+
+{% endblock%}

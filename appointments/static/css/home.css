@@ -1,0 +1,222 @@
+
+body{
+  background-image: url(https://cdn.create.vista.com/api/media/small/80150956/stock-photo-confident-female-doctor-at-office-desk);  
+  /* https://cdn.create.vista.com/api/media/small/80150956/stock-photo-confident-female-doctor-at-office-desk */
+  background-size: cover ;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  
+}
+
+h2{
+  font-size: 20px;
+  color: rgb(2, 87, 99);
+  margin-left: 150px;
+  font-weight: bolder;
+  
+}
+
+h1{
+    font-size: 30px;
+    color: rgb(0, 93, 116);
+    margin-left: 380px;
+    font-weight: bolder;
+  }
+  h4{
+    font-size: 50px;
+    color: rgb(0, 93, 116);
+    margin-left: 300px;
+    font-weight: bolder;
+    margin-top: 80px;
+  }
+
+
+  footer{
+    background-color: rgba(1, 60, 68, 0.959);
+    color: rgb(252, 252, 252);
+    padding: 20px;
+    text-align: center;
+  margin-top: 900px;
+    
+}
+footer i{
+  display: inline-block;
+  margin: 10px;
+  margin-left: 20px;
+}
+
+footer ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+footer li{
+    display: inline-block;
+    margin: 10px;
+}
+footer a{
+    color: rgb(241, 241, 241);
+    text-decoration: none;
+
+}
+
+
+
+
+.b{
+  margin-left: 200px;
+  background-color:rgb(2, 70, 87);
+  color:rgb(245, 250, 255);
+  height:50px;
+  border-radius:10px;
+}
+button a{
+  color: rgb(255, 255, 255);
+}
+
+
+@media  all and (max-width: 1100px) {
+
+  body{
+    background-size:cover ;
+    background-position: center;
+    margin-top: 0px;
+  }
+ 
+  h1{
+    font-size: 20px;
+    margin-left:230px ;
+  
+  }
+
+ 
+  h2{
+    font-size: 20px;
+    margin-left: 10px;
+  }
+  h4{
+    font-size: 40px;
+    margin-left: 150px;
+    margin-top: 250px;
+  }
+.b{
+  margin-left: 180px;
+}
+footer{
+  margin-top: 580px;
+}
+nav a{
+  font-size: 20px;
+}
+}
+@media  all and (max-width: 900px) {
+
+  body{
+    background-size:cover ;
+    background-position: center;
+  }
+ 
+  h1{
+    font-size: 20px;
+    margin-left:280px ;
+  
+  }
+
+ 
+  h2{
+    font-size: 20px;
+    margin-left: 50px;
+  }
+  h4{
+    font-size: 40px;
+    margin-left: 200px;
+  }
+.b{
+  margin-left: 200px;
+}
+
+footer{
+  margin-top: 550px;
+}
+nav a{
+  font-size: 20px;
+}
+}
+@media  all and (max-width: 800px) {
+
+  body{
+    background-size:cover ;
+    background-position: center;
+  }
+ 
+  h1{
+    font-size: 15px;
+    margin-left:210px ;
+  
+  }
+
+ 
+  h2{
+    font-size: 15px;
+    margin-left: 40px;
+  }
+  h4{
+    font-size: 30px;
+    margin-left: 150px;
+  }
+.b{
+  margin-left: 150px;
+}
+
+footer{
+  margin-top: 330px;
+}
+nav a{
+  font-size: 20px;
+}
+}
+@media  all and (max-width: 660px) {
+
+  body{
+    background-size:cover ;
+    background-position: center;
+  }
+ 
+  h1{
+    font-size: 20px;
+    margin-left:130px ;
+
+  }
+
+ 
+  h2{
+    font-size: 15px;
+    margin-left: 10px;
+  }
+  h4{
+    font-size: 30px;
+    margin-left: 90px;
+    margin-top: 300px;
+  }
+.b{
+  margin-left: 100px;
+}
+
+footer{
+  margin-top: 400px;
+  
+}
+footer p{
+  font-size: 10px;
+}
+footer a{
+  font-size: 20px;
+}
+nav a{
+  font-size: 20px;
+}
+footer li a{
+  font-size: 15px;
+}
+}

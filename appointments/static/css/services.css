@@ -1,0 +1,238 @@
+body{
+
+    background-image: url(https://media.istockphoto.com/id/852630954/photo/medical-examination.jpg?s=612x612&w=is&k=20&c=PeVlVA2Gms5na_NsIIt1wlwubJY62M01CFpd0vK55BM=);
+    background-size: 1350px;
+    
+
+}
+
+
+.abc{
+    width:1338px !important; 
+    margin-top:40px;
+}
+h1{
+    margin-left: 400px;
+    font-weight: bolder;
+    font-size: 50px;
+    color: rgb(3, 109, 112);
+    margin-top: 50px;
+    
+}
+h2{
+    text-align: center;
+    font-weight: bolder;
+    margin-top: 30px;
+    font-size: 60px;
+}
+h3{
+    text-align: center;
+    font-size: medium;
+    font-size: 30px;
+}
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    
+}
+.staff{
+    
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: space-evenly !important;
+    margin-top: 80px;
+    text-align: center;
+    height: 150px;
+    margin-bottom: 50PX;
+   
+   
+}
+
+footer{
+    background-color: rgba(2, 94, 100, 0.959);
+    color: rgb(252, 252, 252);
+    padding: 20px;
+    text-align: center;
+    
+}
+footer ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+footer li{
+    display: inline-block;
+    margin: 10px;
+    margin-left: 20px;
+}
+footer i{
+    display: inline-block;
+    margin: 10px;
+    margin-left: 20px;
+}
+
+
+footer a{
+    color: rgb(241, 241, 241);
+    text-decoration: none;
+
+}
+.card{
+    margin-top: 20px;
+}
+.xyz{
+    width:500px;
+    margin-bottom : 40px;
+}
+
+
+@media  screen and (max-width:660px) {
+
+    body{
+        background-size: cover ;
+        background-position: center;
+    }
+
+    h1{
+        margin-left: 30px;
+        font-size: 23px !important;
+        margin-top: 50px;
+    
+        }
+   
+    .staff{
+        width:390px;
+        
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 20px;
+
+    }
+    .x{
+        margin-top: 20px;
+        height: 150px ;
+        width: 200px;
+        margin-left: 20px;
+       
+    }
+    h5{
+        font-size:25px !important ;
+        margin-top: 5px;
+    }
+    p{
+        font-size: 20px !important ;
+        margin-bottom: 5px;
+    }
+  
+    
+   footer p{
+    font-size: 10px ;
+  
+    }
+    footer{
+        margin-top: 400px;
+    }
+
+   .abc{
+    width:390px;
+    margin-top: 350px;
+    }
+    .xyz{
+        width: 300px;
+    }
+   
+    h3{
+      font-size: 20px !important;
+    }
+    h2{
+        font-size: 30px !important;
+    }
+    nav a{
+        font-size: 20px;
+      }
+}
+@media  screen and (max-width: 700px) {
+  
+    .abc{
+        width: 430px ;
+    }
+    nav a{
+        font-size: 20px;
+      }
+
+
+
+
+}
+@media  screen and (max-width: 800px) {
+
+    .abc{
+        width: 770px ;
+    }
+   
+    h1{
+        font-size: 45px ;
+        margin-left: 50px;
+    }
+    
+    .card{width:700px ;
+    }
+    h2{
+        font-size: 50px;
+    }
+    h3{
+        font-size:25px ;
+    }
+    nav a{
+        font-size: 20px;
+      }
+}
+@media  screen and (max-width: 900px) {
+
+    .abc{
+        width: 600px ;
+    }
+    h2{
+        font-size: 40px !important;
+    }
+    nav a{
+        font-size: 20px;
+      }
+   
+    
+}
+@media  screen and (max-width: 1100px) {
+
+    .abc{
+        width: 1010px ;
+    }
+    
+    h1{
+        font-size: 60px ;
+        margin-left: 50px;
+    }
+    
+    .card{
+        width: 900px !important;
+    }
+    .card img{
+        height: 500px !important;
+    }
+    h2{
+        font-size: 60px;
+    }
+    h3{
+        font-size:30px ;
+    }
+    h5{
+        font-size: 30px;
+    }
+    p{
+        font-size: 20px;
+    }
+    nav a{
+        font-size: 20px;
+      }
+}

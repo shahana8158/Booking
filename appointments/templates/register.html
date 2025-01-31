@@ -1,0 +1,54 @@
+
+{% extends 'base.html'%}
+
+{%block title%}
+
+
+{%endblock%}
+
+{% load static %}
+
+{% block style %}
+<link rel="stylesheet" href="{% static 'css/register.css' %}">
+{% endblock %}
+
+{% block content %}
+
+
+
+
+
+    {% for i in messages%}
+
+      <div class="alert alert-danger" role="alert">
+        {{i}}
+      </div>
+
+    {% endfor%}
+
+    <form class="fm" action="/register/" method="POST">
+
+        {% csrf_token%}
+<br >
+        <h1>Create Account</h1>
+
+        <hr style="border-top: 5px solid rgb(0, 90, 86); width:200px ; margin-bottom:50px;">
+    
+        <input type="text" class="form-control"  name= "username" placeholder="user name">
+        <input type="text" class="form-control" name= "fname" placeholder="first name">
+        <input type="text" class="form-control" name="lname" placeholder="last name">
+        <input type="number" class="form-control" name="pnum" placeholder="contact Number">
+        <input type="email" class="form-control" name= "email" placeholder="enter email">
+        <input type="password" class="form-control" name="password1" placeholder="password">
+        <input type="password" class="form-control" name= "password2" placeholder="confirm password">
+
+        <button type="submit" class="btn btn-primary">Register</button>
+
+        <p >Already have an account? <a  href="/login">Login</a></p>
+  <br>
+    </form>
+
+
+
+
+{% endblock%}

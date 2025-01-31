@@ -1,0 +1,187 @@
+body{
+    background-image: url(https://t3.ftcdn.net/jpg/00/99/90/52/360_F_99905255_nSm85vHjPzL7Pg4dWKiXUDmtHZIUBQyo.jpg);
+   /* background-image: url(https://wallpapers.com/images/hd/blue-hd-medical-staff-symbol-eb0mddhppbkibjh7.jpg); */
+    background-size: cover;
+    background-position: left;
+    
+}
+h1{
+    text-align: center;
+    font-weight: bolder;
+    color: rgb(1, 43, 61);
+    font-size: 60px;
+    /* margin-bottom: 70px; */
+    margin-top: 10px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+  
+ nav a{
+        font-size: 20px;
+    } 
+.cardx{
+  
+    margin-left: 370px;
+    width: 550px;
+    /* background-color:rgb(213, 227, 243); */
+    margin-bottom: 50px;
+    font-size: 20px;
+    font-weight: bolder;
+    backdrop-filter: blur(50px) ;
+    margin-top: 30px !important;
+    border-radius: 10px;
+    
+}
+.cardx input{
+    margin-top: 20px;
+    font-size: 20px;
+    width: 350px;
+    height: 50px;
+    border-radius: 10px;
+  
+}
+.a{
+    width: 100px ;
+    margin-left: 60px;
+    background-color: rgb(0, 47, 61);
+    color: azure;
+}
+select {
+    margin-top: 30px;
+    font-size: 20px;
+    width: 350px;
+    height: 50px;
+    border-radius: 10px;
+}
+/* input[type="Date"],input[type="Time"]{
+    margin-top: 30px;
+    font-size: 10px;
+    width: 350px;
+    height: 50px;
+    border-radius: 10px;
+} */
+  
+@media  all and (max-width: 660px) {
+  
+    body{
+        background-size:1400px 1400px ;
+        
+        margin-top: 0px;
+    }
+  
+    h1{
+ 
+        font-size: 40px ;    
+    } 
+
+    nav a{
+        font-size: 30px;
+    }
+    
+
+    .cardx{
+       margin-left: 6px ;
+        width: 370px !important;
+        font-size: 20px !important;
+       
+  
+    }  
+    .cardx input{
+      
+        font-size: 25px !important;
+        width: 200px !important;
+       
+      
+    }  
+    select{
+      
+        font-size: 25px !important;
+        width: 200px !important;
+       
+      
+    } 
+    
+}
+  
+
+     
+
+@media  all and (max-width: 800px) {
+  
+    body{
+        background-size:1400px 1400px ;
+        
+        margin-top: 0px;
+    }
+
+     
+    nav a{
+        font-size: 20px;
+    }
+    .cardx{
+    margin-left: 50px ;
+        width: 550px;
+       
+    }
+  }
+ 
+
+@media  all and (max-width: 900px) {
+  
+    body{
+        background-size:1400px 1400px ;
+        
+        margin-top: 0px;
+    }
+  
+
+    
+    h1{
+        font-size: 50px ;
+    }
+     
+    nav a{
+        font-size: 20px;
+    }
+    .cardx{
+        margin-left: 10px !important;
+        width: 550px ;
+        font-size: 25px;
+   
+    }
+    .cardx input{
+       width: 400px;
+       font-size: 25px;
+      
+    }
+    select{
+        width: 400px;
+        font-size: 25px;
+       
+     }
+      
+  }
+@media  all and (max-width: 1100px) {
+  
+    body{
+        background-size:1400px 1400px ;
+        
+        margin-top: 0px;
+    }
+  
+ 
+    
+    h1{
+        font-size: 40px;
+    }
+     
+    nav a{
+        font-size: 20px;
+    }
+    .cardx{
+      margin-left: 200px;
+        width: 640px;
+      
+    }
+  }
