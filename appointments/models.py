@@ -106,7 +106,7 @@ class booking(models.Model):
     Date=models.DateField(null=True,blank=True)
     Time=models.TimeField(null=True,blank=True)  
     us=models.ForeignKey(User,on_delete=models.CASCADE,default=1) 
-    AM_PM = models.CharField(max_length=2, choices=TIME_PERIOD_CHOICES,null=True,blank=True )
+    
 
     def __str__(self):
         return str(self.us)
