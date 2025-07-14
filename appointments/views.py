@@ -70,7 +70,7 @@ def bookingfn(request):
             plc= request.POST['place']
             date= request.POST['date']
             time_value= request.POST['time']
-            time_period = request.POST["time_period"] 
+            # time_period = request.POST["time_period"] 
             time_v = request.POST["time"]
 
 
@@ -95,10 +95,10 @@ def bookingfn(request):
          
             hour, minute = map(int, time_v.split(":"))
 
-            if time_period == "PM" and hour != 12:  
-               hour += 12
-            if time_period == "AM" and hour == 12:  
-               hour = 0
+            # if time_period == "PM" and hour != 12:  
+            #    hour += 12
+            # if time_period == "AM" and hour == 12:  
+            #    hour = 0
             
             input_time = time ( hour, minute)
             start_time = time(9, 0)  
@@ -122,7 +122,7 @@ def bookingfn(request):
                 Place=plc,
                 # Date=date,
                 Date=booking_date,
-                AM_PM = time_period ,
+                # AM_PM = time_period ,
                 us=request.user,
                 # time_period=time_period
                 Time=input_time,
