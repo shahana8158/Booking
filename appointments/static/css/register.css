@@ -1,10 +1,10 @@
 body{
- 
-    background-image: url(https://img.freepik.com/premium-photo/medicine-age-support-healthcare-people-concept-close-up-doctor-nurse-holding-senior-man-hand-hospital_380164-166867.jpg);
+  background: radial-gradient(circle, #012f3e 0%, #60aecd 40%, #003b54 100%);
+    /* background-image: url(https://img.freepik.com/premium-photo/medicine-age-support-healthcare-people-concept-close-up-doctor-nurse-holding-senior-man-hand-hospital_380164-166867.jpg);
   background-size: 1350px 1400px;
   background-position: right;
-}
-
+*/
+} 
 
 .fm{
     width: 40%;
